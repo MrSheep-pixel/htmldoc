@@ -15,11 +15,16 @@
   </div>
   <script>
    
-   createCanvas(720,400);
-   fill(100,100,100);
-   ellipse(300,300,300);
-  
+   function setup() {
+  createCanvas(720, 400);
+}
    
+function draw() {
+ noStroke();
+ fill(mouseX, mouseY,50);
+ ellipse(200,200,300);
+}
+  
   </script>
  </body>
 </html>
