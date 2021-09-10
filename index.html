@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <style>
-   
-   h1 {
-    text-align: center;
-   }
- 
-  </style>
- </head>
- <body>
-  <div>
-   <h1> Test-1 </h1>
-  </div>
-  <script>
-   
-   function setup() {
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+   <script>
+
+function setup() {
   createCanvas(720, 400);
 }
-   
+
+// Draw on canvas
 function draw() {
  noStroke();
  fill(mouseX, mouseY,50);
  ellipse(200,200,300);
 }
- 
-draw();
-setup();
-   
-  </script>
- </body>
+   </script>
+  </head>
+  <body onload="draw()">
+    
+  </body>
 </html>
