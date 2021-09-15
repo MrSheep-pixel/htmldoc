@@ -6,7 +6,7 @@
     
     <style>
         
-        #text {
+        p.text {
             color: rgb(255,245,100);
             font-family: arial;
             width: 200px;
@@ -28,7 +28,7 @@
         position: absolute;
         left: 50px;
         top: 250px;
-        padding: 10px;
+        padding: 5px;
        }
         
        body {
@@ -84,22 +84,66 @@
            transform: translateY(5px);
        }
        
+       button.Js {
+           padding: 12.5px;
+           color: rgb(200,200,200);
+           font-family: arial;
+           background-color: rgb(55,50,50);
+           border: 0px;
+           border-radius: 5px;
+           position: absolute;
+           left: 430px;
+           top: 320px;
+           cursor: pointer;
+           
+       }
+       
+       button.image {
+           background-color: transparent;
+           font-size: 0px;
+           border: none;
+           width:100px;
+           height:100px;
+           position: absolute;
+           left: 60px;
+           top: 260px;
+           padding: 10px;
+           
+           
+       }
        
     </style>
 </head>
 <body>
     <title>test</title>
     
-    <div id="text">
-        <p>Remember to ask <br>Mr.Moris for the source<br> code to discord</p>
-    </div>
     
-    <img src="https://freesvg.org/img/space-invaders.png" class="SI">
+    <p class="text">Remember to ask <br>Mr.Moris for the source<br> code to discord</p>
     
-    <button class="A" onclick="alert('hello')">test</button>
     
-    <button class="shadow" onclick="alert('shadow button')">test-2</button>
+    <img src="https://freesvg.org/img/space-invaders.png" class="SI" title="Space Invaders">
     
-    <button class="effect">test-3</button>
+    <button class="A" title="Simple Button" onclick="alert('hello')">test</button>
+    
+    <button class="shadow" title="Shadow Button" onclick="alert('shadow button')">test-2</button>
+    
+    <button class="effect" title="Fancy Button">test-3</button>
+    
+    <button class="Js" id="buttonA" title="JavaScript Button" onclick="button()">test-4</button>
+    
+    <button class="image" title="Space Invaders invis button" onclick="alert('Space Invaders')">...</button>
+    <script>
+        
+        
+        function button() {
+            document.getElementById("buttonA").style.backgroundColor=randomColors()
+        }
+        
+        function randomColors() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+        
+    </script>
+    
 </body>
 </html>
