@@ -36,20 +36,70 @@
         }
         
        button.A {
+           cursor: pointer;
            padding: 10px;
            position: absolute;
            left: 300px;
+           font-family: arial;
+           background-color: rgb(30,80,20);
+           color: rgb(200,200,200);
+           border-radius: 5px;
+           border: solid rgb(10,60,0);
        }
+       
+       button.shadow {
+           cursor: pointer;
+           padding: 10px;
+           color: rgb(200,200,200);
+           font-family: arial;
+           background-color: rgb(80,30,20);
+           border:5px solid rgb(60,10,0);
+           border-radius: 5px;
+           position: absolute;
+           left: 400px;
+           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.50);
+       }
+       
+       button.effect {
+           padding: 12.5px;
+           color: rgb(200,200,200);
+           font-family: arial;
+           background-color: rgb(20,30,80);
+           border: 0px;
+           border-radius: 5px;
+           position: absolute;
+           left: 340px;
+           top: 320px;
+           box-shadow: 0 5px rgb(0,10,60);
+           cursor: pointer;
+       }
+       
+       button.effect:hover {
+           background-color: rgb(15,25,75);
+       }
+       
+       button.effect:active {
+           background-color: rgb(15,25,75);
+           box-shadow: 0 0px;
+           transform: translateY(5px);
+       }
+       
+       
     </style>
 </head>
 <body>
     <title>test</title>
     
     <div id="text">
-        <p>text text text text text text text text text text text text text text text text text text</p>
+        <p>Remember to ask <br>Mr.Moris for the source<br> code to discord</p>
     </div>
     
     <img src="https://freesvg.org/img/space-invaders.png" class="SI">
+    
     <button class="A" onclick="alert('hello')">test</button>
+    
+    <button class="shadow" onclick="alert('shadow button')">test-2</button>
+    
+    <button class="effect">test-3</button>
 </body>
 </html>
