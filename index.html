@@ -1,26 +1,49 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body>
-
-        <title>testing</title>
-        <link rel="icon" href="https://realfavicongenerator.net/homepage_icons/technologies/html5.png">
-        <h1>
-            Band parent meeting tonight! 
-        </h1>
-   
-        <style>
-            h1 {
-                font-size: 100px;
-                text-align: center;
-                font-family: arial;
-                color: rgb(105,100,95);
-            }
-            
-            body {
-                background-color: rgb(25,25,30);
-            }
-        </style>
-    </body>
+<head>
+    <style>
+        
+        #text {
+            color: rgb(255,245,100);
+            font-family: arial;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(85, 75, 65);
+            border:5px solid rgb(65,55,45);
+            border-radius: 40px;
+            padding: 10px;
+        }
+        
+       img.SI {
+        
+        width: 100px;
+        height: 100px;
+        image-rendering: pixelated;
+        background-color: rgb(0,0,50);
+        border-radius: 30px;
+        border:5px solid rgb(0,0,20);
+        position: absolute;
+        left: 50px;
+        top: 250px;
+        padding: 10px;
+       }
+       
+       button.A {
+           padding: 10px;
+           position: absolute;
+           left: 300px;
+       }
+    </style>
+</head>
+<body>
+    <title>test</title>
+    <link rel="icon" href="https://realfavicongenerator.net/homepage_icons/technologies/html5.png">
+    
+    <div id="text">
+        <p>text text text text text text text text text text text text text text text text text text</p>
+    </div>
+    
+    <img src="https://freesvg.org/img/space-invaders.png" class="SI">
+    <button class="A" onclick="alert('hello')">test</button>
+</body>
 </html>
